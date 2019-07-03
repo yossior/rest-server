@@ -44,7 +44,7 @@ var Account = require('./models/account');
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
-mongoose.connect('mongodb://localhost/cars');
+mongoose.connect('mongodb://localhost/restDB');
 
 
 // catch 404 and forward to error handler
